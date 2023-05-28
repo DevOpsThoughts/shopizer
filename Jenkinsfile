@@ -21,7 +21,7 @@ pipeline {
             }
         }
 
-        tage('junit_reports'){
+        stage('junit_reports'){
             steps{
                 junit '**/surefire-reports/*.xml'
             }
