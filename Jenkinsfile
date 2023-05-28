@@ -21,6 +21,12 @@ pipeline {
             }
         }
 
+        tage('junit_reports'){
+            steps{
+                junit '**/surefire-reports/*.xml'
+            }
+        }
+
     
     }
 }
